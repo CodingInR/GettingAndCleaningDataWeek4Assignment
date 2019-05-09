@@ -11,8 +11,8 @@
 #library(qdap)
 
 #dplyr for final tidy data set
-#install.packages("dplyr")
-#library(dplyr)
+install.packages("dplyr")
+library(dplyr)
 
 #Dataset URL
 URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -51,8 +51,8 @@ all_data$activity <- factor(all_data$activity, labels = act[,2])
 sel_vars<- grepl("subject|activity|mean|std", Names)
 reduced_data <- all_data[,sel_vars == TRUE]
 
-#clean up environment
-rm(list=setdiff(ls(), "reduced_data"))
+#clean up environment (commented out as optional)
+#rm(list=setdiff(ls(), "reduced_data"))
 
 #tidy up variable names per the descriptions in features_info.txt
 ugly_names <- c("^t","^f","Acc","Mag","Gyro","BodyBody","std")
