@@ -14,4 +14,4 @@ Coursera R - Getting and Cleaning Data final project
 * code_book.md   : A description of the variables and summaries calculate with units and other pertinent information
 
 ## What it Does
-*Running *run_analysis.R* downloads the UCI data from the UCI data source, imports it to R data objects, merges data sets, modifies variables and factors to be more descriptive, and outputs a summary of means and standard deviations in a tidy data set (output file shown above)
+* Running *run_analysis.R* downloads the UCI data from the UCI data source, imports it to R data objects, merges data sets, modifies variables and factors to be more descriptive, and outputs a summary of means and standard deviations in a tidy data set (output file shown above)
