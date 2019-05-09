@@ -28,5 +28,6 @@
   * *feature names* is a 561 element character vector transposed from the second colum of features.txt
 * Changes the numbered activity variables to descriptions (e.g. "1" to "WALKING") by factorizing activity lables into the activity column
 * Using grepl to search for means and standard deviations (and including subject and activity), the data is subsetted into a smaller data set
+  * *Note: includes frequency means
 * A tidy data set is produced by using dplyr to redice the data, grouped by activity and subject and summarized by means
 * The tidy data set is written out to a text file ("tidy_data.txt"), provided in this repo
